@@ -1,0 +1,236 @@
+/* General page styling */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*background-image: url('textures/background.jpg');*/
+}
+
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+
+/* Solar system container */
+#solar-system {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+}
+
+/* Orbit styling */
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.5); /* Dashed border for orbits */
+  pointer-events: none; /* Makes orbits non-clickable */
+}
+
+/* Glow effect for planets */
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.planet::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.377), rgba(255, 255, 255, 0));
+  filter: blur(8px); /* Adjust blur for subtle glow */
+  z-index: -1; /* Behind the planet */
+}
+h1 {
+  background: radial-gradient(circle, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+/* Sun container */
+.sun-container {
+  position: absolute;
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Ensure it's above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sun glow effect */
+.sun-glow {
+  position: absolute;
+  width: 100%; /* Same as the container */
+  height: 100%; /* Same as the container */
+  border-radius: 50%;
+  background-color: rgb(255, 255, 0); /* Glow color */
+  filter: blur(20px); /* Adjust blur to make the glow effect */
+  z-index: -1; /* Position behind the sun image */
+}
+
+/* Sun image */
+.sun {
+  position: relative;
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  background-image: url('textures/sun.png'); /* Ensure this path is correct */
+  background-size: cover;
+  border-radius: 50%;
+}
+
+
+/* Planets */
+.mercury-orbit {
+  width: 120px;
+  height: 120px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mercury {
+  width: 20px;
+  height: 20px;
+  background-image: url('textures/mercury.png');
+  top: 0; /* Adjust for correct positioning */
+  left: 50%; /* Center planet on its orbit */
+  transform: translate(-50%, -50%);
+}
+
+.venus-orbit {
+  width: 180px;
+  height: 180px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.venus {
+  width: 30px;
+  height: 30px;
+  background-image: url('textures/venus.png');
+  top: 0; /* Adjust for correct positioning */
+  left: 50%; /* Center planet on its orbit */
+  transform: translate(-50%, -50%);
+}
+
+.earth-orbit {
+  width: 240px;
+  height: 240px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.earth {
+  width: 35px;
+  height: 35px;
+  background-image: url('textures/earth.png');
+  top: 0; /* Adjust for correct positioning */
+  left: 50%; /* Center planet on its orbit */
+  transform: translate(-50%, -50%);
+}
+
+.mars-orbit {
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mars {
+  width: 25px;
+  height: 25px;
+  background-image: url('textures/mars.png');
+  top: 0; /* Adjust for correct positioning */
+  left: 50%; /* Center planet on its orbit */
+  transform: translate(-50%, -50%);
+}
+
+.jupiter-orbit {
+  width: 360px;
+  height: 360px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jupiter {
+  width: 60px;
+  height: 60px;
+  background-image: url('textures/jupiter.png');
+  top: 0; /* Adjust for correct positioning */
+  left: 50%; /* Center planet on its orbit */
+  transform: translate(-50%, -50%);
+}
+
+.saturn-orbit {
+  width: 420px;
+  height: 420px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.saturn {
+  width: 55px;
+  height: 55px;
+  background-image: url('textures/saturn.png');
+  top: 0; /* Adjust for correct positioning */
+  left: 50%; /* Center planet on its orbit */
+  transform: translate(-50%, -50%);
+}
+
+.uranus-orbit {
+  width: 480px;
+  height: 480px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.uranus {
+  width: 45px;
+  height: 45px;
+  background-image: url('textures/uranus.png');
+  top: 0; /* Adjust for correct positioning */
+  left: 50%; /* Center planet on its orbit */
+  transform: translate(-50%, -50%);
+}
+
+.neptune-orbit {
+  width: 540px;
+  height: 540px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.neptune {
+  width: 50px;
+  height: 50px;
+  background-image: url('textures/neptune.png');
+  top: 0; /* Adjust for correct positioning */
+  left: 50%; /* Center planet on its orbit */
+  transform: translate(-50%, -50%);
+}
