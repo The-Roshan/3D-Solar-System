@@ -92,7 +92,7 @@ h1 {
   position: relative;
   width: 80px; /* Adjust size as needed */
   height: 80px; /* Adjust size as needed */
-  background-image: url('textures/sun.png'); /* Ensure this path is correct */
+  background-image: url('sun.png'); /* Ensure this path is correct */
   background-size: cover;
   border-radius: 50%;
 }
@@ -110,7 +110,7 @@ h1 {
 .mercury {
   width: 20px;
   height: 20px;
-  background-image: url('textures/mercury.png');
+  background-image: url('mercury.png');
   top: 0; /* Adjust for correct positioning */
   left: 50%; /* Center planet on its orbit */
   transform: translate(-50%, -50%);
@@ -127,7 +127,7 @@ h1 {
 .venus {
   width: 30px;
   height: 30px;
-  background-image: url('textures/venus.png');
+  background-image: url('venus.png');
   top: 0; /* Adjust for correct positioning */
   left: 50%; /* Center planet on its orbit */
   transform: translate(-50%, -50%);
@@ -144,7 +144,7 @@ h1 {
 .earth {
   width: 35px;
   height: 35px;
-  background-image: url('textures/earth.png');
+  background-image: url('earth.png');
   top: 0; /* Adjust for correct positioning */
   left: 50%; /* Center planet on its orbit */
   transform: translate(-50%, -50%);
@@ -161,7 +161,7 @@ h1 {
 .mars {
   width: 25px;
   height: 25px;
-  background-image: url('textures/mars.png');
+  background-image: url('mars.png');
   top: 0; /* Adjust for correct positioning */
   left: 50%; /* Center planet on its orbit */
   transform: translate(-50%, -50%);
@@ -178,7 +178,7 @@ h1 {
 .jupiter {
   width: 60px;
   height: 60px;
-  background-image: url('textures/jupiter.png');
+  background-image: url('jupiter.png');
   top: 0; /* Adjust for correct positioning */
   left: 50%; /* Center planet on its orbit */
   transform: translate(-50%, -50%);
@@ -195,7 +195,7 @@ h1 {
 .saturn {
   width: 55px;
   height: 55px;
-  background-image: url('textures/saturn.png');
+  background-image: url('saturn.png');
   top: 0; /* Adjust for correct positioning */
   left: 50%; /* Center planet on its orbit */
   transform: translate(-50%, -50%);
@@ -212,7 +212,7 @@ h1 {
 .uranus {
   width: 45px;
   height: 45px;
-  background-image: url('textures/uranus.png');
+  background-image: url('uranus.png');
   top: 0; /* Adjust for correct positioning */
   left: 50%; /* Center planet on its orbit */
   transform: translate(-50%, -50%);
@@ -229,7 +229,7 @@ h1 {
 .neptune {
   width: 50px;
   height: 50px;
-  background-image: url('textures/neptune.png');
+  background-image: url('neptune.png');
   top: 0; /* Adjust for correct positioning */
   left: 50%; /* Center planet on its orbit */
   transform: translate(-50%, -50%);
